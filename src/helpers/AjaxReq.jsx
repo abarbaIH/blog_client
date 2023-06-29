@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
 const AjaxReq = async (url, methodReceived, dataToSave = "") => {
+
     let loading = true
 
     let options = {

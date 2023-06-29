@@ -20,6 +20,7 @@ body {
     "footer footer footer footer"
   ;
   grid-template-rows: 100px 70px auto 70px;
+  grid-template-columns: 1fr 1fr 1fr 25%;
 }
 
 /*ESTILOS CABECERA*/
@@ -132,6 +133,16 @@ body {
   font-size: 20px;
 }
 
+.data-article h3 a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.data-article h3 a:hover {
+  color: blue;
+}
+
 .home-page {
   width: 85%;
   padding: 55px;
@@ -140,6 +151,12 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 6px #ddd;
   margin: 25px auto;
+}
+
+.home-page .mask {
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
 }
 
 .home-page h1 {
@@ -207,12 +224,8 @@ input[type="button"] {
   box-shadow: 0px 0px 6px #ddd;
 }
 
-.lateral input[type="text"],
-.lateral input[type="text"],
-.lateral textarea,
-.edit_form input[type="text"],
-.edit_form input[type="text"],
-.edit_form textarea {
+input[type="text"],
+textarea {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
@@ -224,6 +237,29 @@ input[type="button"] {
   opacity: 4;
   outline: 0;
   border-color: transparent;
+}
+
+.form-group {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+  color: #444;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+
+  border: 1px solid #ddd;
+  outline: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .edit_form {
